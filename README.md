@@ -1,46 +1,34 @@
-# Getting Started with Create React App
+# Weather App (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a modern React application for viewing weather information based on location.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Homepage:**
+	- Displays a dashboard for weather lookup.
+	- Responsive layout with input, weather card, and map sections.
 
-### `npm start`
+- **Input Component:**
+	- Allows users to select a country, state, and city using dropdowns.
+	- Fetches and displays weather data for the selected city.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Map Component:**
+	- Interactive map (OpenStreetMap + Leaflet) for selecting a location by clicking.
+	- Fetches and displays weather data for the selected latitude/longitude.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Weather Card:**
+	- Shows current temperature, weather condition, and city name.
+	- Updates automatically when a new location is selected.
+    - The temperature can be toggled between Celcius and Farenheit simply by clicking the temperature
 
-### `npm test`
+- **Local Storage:**
+	- Remembers the last fetched weather data for quick reloads.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How It Works
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Select a location:**
+	 - Use the dropdowns to pick a country, state, and city, or click on the map to drop a pin.
+2. **View weather:**
+	 - The app fetches weather data from OpenWeatherMap and displays it in the weather card.
+3. **Switch between input and map:**
+	 - You can use either method to update the weather card instantly.
