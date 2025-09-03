@@ -1,3 +1,13 @@
+:root {
+  --color-primary: lightblue;
+  --color-primary-dark: rgb(106, 162, 180);
+  --color-secondary: coral;
+  --color-background: white;
+  --color-text: white;
+  --color-border: lightgray;
+  --color-temperature: rgb(49, 49, 49);
+}
+
 .App {
   text-align: center;
 }
@@ -32,6 +42,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
